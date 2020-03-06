@@ -9,6 +9,7 @@ import { ShoppingBasket } from 'commerce/data';
 import { canAddToBasket } from './product.helper.js';
 import { useQuery } from '@lwce/apollo-client';
 import gql from 'graphql-tag';
+import { apiClient } from '../api/client';
 
 const QUERY = gql`
     query($productId: String!, $selectedColor: String) {
